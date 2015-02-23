@@ -1,6 +1,6 @@
 require 'basicgeo/consumer/google'
 require 'basicgeo/parser/json'
 
-module BasicGeo
+module Basicgeo
   
 end
