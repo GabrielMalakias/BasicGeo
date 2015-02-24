@@ -1,4 +1,5 @@
 require 'httparty'
+require 'i18n'
 
 module Basicgeo
   module Consumer
@@ -7,7 +8,7 @@ module Basicgeo
       include HTTParty
 
       def parse_address(string)
-        string.gsub(" ", "+")
+        string.removeaccents.gsub(" ", "+")
       end
 
       def get_location(address)
