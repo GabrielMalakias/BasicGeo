@@ -14,7 +14,11 @@ module Basicgeo
         end
         data
       end
-    
+
+      def get_data_with_node(data, node, index)
+        navigate_to_node(data[index], node)
+      end
+
     end
   end
 end
