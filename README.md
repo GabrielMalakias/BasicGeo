@@ -3,7 +3,7 @@ BasicGeo
 =========
 
 This repository has been created for develop an Location API.
-Is simple, only for test my knowledge and for develop an my custom application, but your use is free...
+Is simple, only for test my knowledge and for develop an my custom application, but your use is unrestrained...
 
 ###Instalation
 
