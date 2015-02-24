@@ -2,9 +2,9 @@ require "rubygems"
 require 'json'
 module Basicgeo
   module Parser
-    class Json
+    module Json
 
-      def parse_data(data)
+      def parse(data)
          data = JSON.parse(data)
       end
 

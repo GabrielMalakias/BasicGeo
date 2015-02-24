@@ -1,7 +1,7 @@
 require 'basicgeo/consumer/google'
 require 'basicgeo/parser/json'
 require 'basicgeo/extend_string'
-
+require 'basicgeo/builder/google'
 module Basicgeo
 
   def self.get_lat_long(address)
