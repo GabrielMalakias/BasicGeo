@@ -1,5 +1,4 @@
 require 'httparty'
-require 'i18n'
 
 module Basicgeo
   module Consumer

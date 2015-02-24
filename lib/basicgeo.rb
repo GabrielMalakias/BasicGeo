@@ -5,9 +5,8 @@ require 'basicgeo/extend_string'
 module Basicgeo
   
   def self.get_lat_long(address)
-    I18n.locale = :en
     parser = Basicgeo::Parser::Json.new
-    parser.navigate_to_node(parse_data(get_google_data(address)), ['results', 0, 'geometry', 'location'])
+    parser.navigate_to_node(parser.parse_data(get_google_data(address).body), Basicgeo::GoogleJsonMapping::LOCATION)
   end
 
   def self.get_google_data(address)
